@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@'
+<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -33,10 +34,27 @@ aria-label="Abrir menu">
 <p class="lead">Aqui va una descripcion corta del juego.</p>
 </main>
 
-<div class="my-5"></div>
+<section id="galeria" class="container my-5">
+<h2 class="mb-4">Galeria</h2>
+<div class="row g-3">
+<div class="col-12 col-md-4">
+<img src="https://picsum.photos/600/400?random=1"
+class="img-fluid rounded" alt="Captura 1 del juego">
+</div>
+<div class="col-12 col-md-4">
+<img src="https://picsum.photos/600/400?random=2"
+class="img-fluid rounded" alt="Captura 2 del juego">
+</div>
+<div class="col-12 col-md-4">
+<img src="https://picsum.photos/600/400?random=3"
+class="img-fluid rounded" alt="Captura 3 del juego">
+</div>
+</div>
+</section>
 
 <script
 src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
 </script>
 </body>
 </html>
+'@ | Set-Content -Path index.html -Encoding utf8
